@@ -53,7 +53,7 @@ function switchTheme(event) {
     localStorage.setItem('theme', 'dark');
     darkMode();
   } else {
-    document.documentElement.setAttribute('data-theme', 'light');
+    document.documentEle ment.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
     lightMode();
   }
@@ -69,6 +69,6 @@ if (currentTheme) {
 
   if (currentTheme === 'dark') {
     toggleSwitch.checked = true;
-    darkMode();
+    darkMode(); //lol
   }
 }
