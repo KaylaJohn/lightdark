@@ -48,8 +48,7 @@ function lightMode() {
 
 // Switch Theme Dynamically
 function switchTheme(event) {
-  console.log(document);
-  if (event.target.checked) {
+    if (event.target.checked) {
     document.documentElement.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
     darkMode();
@@ -70,6 +69,6 @@ if (currentTheme) {
 
   if (currentTheme === 'dark') {
     toggleSwitch.checked = true;
-    darkMode(); //lol
+    darkMode();
   }
 }
