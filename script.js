@@ -48,12 +48,13 @@ function lightMode() {
 
 // Switch Theme Dynamically
 function switchTheme(event) {
+  console.log(document);
   if (event.target.checked) {
     document.documentElement.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark');
     darkMode();
   } else {
-    document.documentEle ment.setAttribute('data-theme', 'light');
+    document.documentElement.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
     lightMode();
   }
